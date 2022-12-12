@@ -17,3 +17,9 @@ let modalClick =  document.getElementById(`modal-link`);
 modalClick.setAttribute(`onclick`,`showModal();`);
 
 menu.setAttribute(`onclick`,`showMenu();`);
+
+document.addEventListener(`keydown`, (e) => {
+    if (e.key === `Escape`)
+        modal.style.display = `none`;
+});
+
