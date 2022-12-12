@@ -1,3 +1,14 @@
+:root {
+  --sub-nav-count: 2;
+  --width--nav-item: 150px;
+  --width--nav: calc(var(--width--nav-item) * var(--sub-nav-count));
+  --height--nav-item: 48px;
+  --height--inner-li: calc(var(--height--nav-item) + 0);
+  --color--bg--main: #21bde1;
+  --color--bg--link-hover: #d5f2f9;
+  --color--bg--nav: #fff;
+  --color--text: #555;
+}
 
 body {
   padding: auto;
@@ -29,6 +40,23 @@ a {
   color: #555;
 }
 
+#js-triggers li {
+  list-style: none;
+  display: block;
+  background-color: var(--color--bg--main);
+  width: var(--width--nav-item);
+  border: none;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  float: left;
+  color: white;
+  transition: 500ms;
+}
+
+#js-triggers li:hover {
+  background-color: var(--color--bg--link-hover);
+}
 .modal-panel {
   display: none;
   position: fixed;
