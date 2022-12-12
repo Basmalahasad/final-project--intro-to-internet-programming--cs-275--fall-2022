@@ -5,6 +5,23 @@ body {
   overflow: scroll;
 }
 
+header {
+  background-color: #21bde1;
+  width: 100%;
+  height: 50px;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  display: auto;
+}
+
+header ul {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  left: calc(50% - 150px);
+}
 .modal-panel {
   display: none;
   position: fixed;
