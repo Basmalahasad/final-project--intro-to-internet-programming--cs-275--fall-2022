@@ -57,6 +57,48 @@ a {
 #js-triggers li:hover {
   background-color: var(--color--bg--link-hover);
 }
+
+nav {
+  margin-left: auto;
+  width: var(--width--nav);
+  height: var(--height--nav-item);
+  display: none;
+  transition: 500ms;
+}
+
+nav ul {
+  background-color: var(--color--bg--nav);
+  list-style-type: none;
+  position: relative;
+}
+
+nav ul li {
+  margin-left: auto;
+}
+
+nav > ul {
+  position: inherit;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav > ul > li {
+  position: relative;
+  margin: 0;
+  width: var(--width--nav-item);
+}
+
+nav > ul > li:hover > ul {
+  visibility: visible;
+}
+
+nav > ul > li > ul {
+  position: relative;
+  left: 0;
+  visibility: hidden;
+}
+
 .modal-panel {
   display: none;
   position: fixed;
