@@ -1,14 +1,22 @@
+/*
+* Basmalah Asad, final assignment, 12/12/2022
+*/
+
 let modal = document.getElementById(`modal`);
 let menu = document.getElementById(`menu-link`);
 let header = document.querySelector(`header`);
 let body = document.querySelector(`body`);
 let navigation = document.querySelector(`nav`);
 menu.appendChild(navigation);
+
+// shows modal and hides scroll bars
 let showModal = () => {
     modal.style.display = `block`;
     navigation.style.display = `none`;
     body.style.overflow = `hidden`;
 };
+
+//shows menu
 let showMenu = () => {
     navigation.style.display = `block`;
 };
