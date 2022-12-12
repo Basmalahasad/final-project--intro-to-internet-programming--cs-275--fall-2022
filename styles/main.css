@@ -99,6 +99,29 @@ nav > ul > li > ul {
   visibility: hidden;
 }
 
+@media only screen and (max-width: 736px) {
+  nav {
+    flex-direction: column;
+  }
+
+  nav ul {
+    position: relative;
+    float: left;
+    left: calc(50% - 50vw + 8px);
+    flex-direction: column;
+  }
+
+  nav ul li {
+    position: relative;
+  }
+}
+
+@media only screen and (min-width: 737px) {
+  nav {
+    margin: 0 ;
+  }
+}
+
 .modal-panel {
   display: none;
   position: fixed;
