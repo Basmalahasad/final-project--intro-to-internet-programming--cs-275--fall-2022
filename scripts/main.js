@@ -23,3 +23,14 @@ document.addEventListener(`keydown`, (e) => {
         modal.style.display = `none`;
 });
 
+window.onclick = function(e) {
+    if (e.target == modal) {
+        modal.style.display = `none`;
+        body.style.overflow = `scroll`;
+    }
+    if (e.target == header){
+        //exits the menu if the header is clicked
+        navigation.style.display = `none`;
+    }
+};
+
